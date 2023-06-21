@@ -1,6 +1,6 @@
-import { Fragment } from 'react'
 import Header from './Components/Header'
 import Form from './Components/Form'
+import CategoriasProvider from './Contex/CategoriasContex'
 
 
 function App() {
@@ -8,15 +8,14 @@ function App() {
 
   return (
 
-    <Fragment>
+    <CategoriasProvider>
         <Header/>
-
         <div className="container mt-5">
             <div className="row">
                 <Form />
             </div>
         </div>
-    </Fragment>
+    </CategoriasProvider>
     
 
  )
